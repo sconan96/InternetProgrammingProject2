@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B7E9F7"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_main" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_led"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/icon_light"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="end|bottom" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_sound_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/icon_nosound"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="center|bottom" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_sound_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/icon_c"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="start|top" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_sound_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/icon_d"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="top|center" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_sound_e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/icon_e"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="end|top" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_sound_f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/icon_f"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="start|center" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_sound_g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/icon_g"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="center" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_sound_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/icon_a"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="end|center" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_sound_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/icon_b"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="start|bottom" />
+
+</android.support.design.widget.CoordinatorLayout>
