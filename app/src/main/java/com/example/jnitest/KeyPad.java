@@ -35,7 +35,6 @@ public class KeyPad extends AppCompatActivity {
         });
 
         editText = (EditText) findViewById(R.id.txt_editchange);
-
         editText.setOnKeyListener( new OnKeyListener(){
             @Override
             public boolean onKey(View v, int keyCode, KeyEvent event){
