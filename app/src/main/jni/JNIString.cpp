@@ -1,6 +1,3 @@
-//
-// Created by DKU on 2019-05-29.
-//
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>

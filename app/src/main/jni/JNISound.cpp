@@ -1,6 +1,3 @@
-//
-// Created by DKU on 2019-06-10.
-//
 #include <string.h>
 #include <jni.h>
 #include <stdio.h>
