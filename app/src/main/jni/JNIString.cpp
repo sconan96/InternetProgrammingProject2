@@ -9,7 +9,7 @@
 #include <asm/unistd.h>   // for __NR_write
 #include <stdlib.h>       // for ssize_t
 
-ssize_t write(int fd, const void *buf, ssize_t count)
+ssize_t wwrite(int fd, const void *buf, ssize_t count)
 {
     return syscall(__NR_write, fd, buf, count);
 }
@@ -20,7 +20,7 @@ JNIEXPORT jstring JNICALL Java_com_example_jnitest_MainActivity_JNIString
   (JNIEnv *env, jobject jobj) {
 
     int fd = open("/dev/fpga_led", O_RDWR);
-    int ret = write(fd, &counter, sizeof(counter));
+    int ret = wwrite(fd, &counter, sizeof(counter));
     close(fd);
     counter++;
     if (counter > 255) counter = 0;
